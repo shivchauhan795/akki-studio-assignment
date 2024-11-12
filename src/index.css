@@ -1,3 +1,194 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 1370px) {
+    .gapspace {
+        display: flex;
+        gap: 120px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1311px) {
+    .gapspace {
+        display: flex;
+        gap: 115px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1275px) {
+    .gapspace {
+        display: flex;
+        gap: 105px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1215px) {
+    .gapspace {
+        display: flex;
+        gap: 100px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1185px) {
+    .gapspace {
+        display: flex;
+        gap: 90px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .gapspace {
+        display: flex;
+        gap: 70px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .gapspace {
+        display: flex;
+        gap: 60px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    .gapspace {
+        display: flex;
+        gap: 50px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .gapspace {
+        display: flex;
+        gap: 40px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .gapspace {
+        display: flex;
+        gap: 30px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .gapspace {
+        display: flex;
+        gap: 30px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .gapspace {
+        display: flex;
+        gap: 25px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .gapspace {
+        display: flex;
+        gap: 20px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .gapspace {
+        display: flex;
+        gap: 15px;
+    }
+
+    .xpadding {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 615px) {
+    .gapspace {
+        display: flex;
+        gap: 10px;
+    }
+
+    .xpadding {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .hidedisplay {
+        display: none
+    }
+
+    .showdisplay {
+        display: flex;
+    }
+
+}
