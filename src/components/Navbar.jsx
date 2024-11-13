@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
     return (
         <>
             <div className='flex justify-center items-center border border-x-0 border-t-0 border-black pt-7 mx-10 gap-32 gapspace hidedisplay'>
@@ -28,9 +33,28 @@ const Navbar = () => {
                     <span className='uppercase text-2xl font-semibold cursor-pointer transform transition duration-200 hover:scale-110'>borcelle</span>
                 </div>
                 <div className='flex justify-center items-center text-3xl xpadding'>
-                    <GiHamburgerMenu />
+                    <GiHamburgerMenu className='cursor-pointer' onClick={toggleMenu} />
                 </div>
             </div>
+            {menuOpen && (
+                <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-85 z-50'>
+                    <div className='flex justify-end p-4'>
+                        <IoMdClose
+                            className="text-3xl text-white cursor-pointer"
+                            onClick={toggleMenu}
+                        />
+                    </div>
+
+                    <div className='flex flex-col justify-center items-center space-y-6 text-white h-full'>
+                        <span className='text-2xl uppercase cursor-pointer'>home</span>
+                        <span className='text-2xl uppercase cursor-pointer'>blog</span>
+                        <span className='text-2xl uppercase cursor-pointer'>about</span>
+                        <span className='text-2xl uppercase cursor-pointer'>account</span>
+                        <span className='text-2xl uppercase cursor-pointer'>shop</span>
+                        <span className='text-2xl uppercase cursor-pointer'>contact</span>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
