@@ -62,7 +62,7 @@ const Home = () => {
                     </div>
 
                     <div className='flex flex-col lg:w-2/3'>
-                        <Carousel showThumbs={false} showStatus={false}  autoPlay infiniteLoop className='setcarouselwidth '>
+                        <Carousel showThumbs={false} showStatus={false} interval={2000} transitionTime={500} autoPlay infiniteLoop className='setcarouselwidth '>
 
                             <div className='flex flex-wrap gap-16 justify-center colflex'>
                                 {/* 1st */}
@@ -79,7 +79,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className='font-light tracking-widest text-zinc-500 flex items-start'>
-                                    Set of towels
+                                        Set of towels
                                     </div>
                                     <div className='flex justify-between items-center  text-zinc-500'>
 
@@ -166,7 +166,7 @@ const Home = () => {
                                     <div className='flex justify-between items-center  text-zinc-500'>
 
                                         <div className='font-light tracking-widest'>
-                                            
+
                                         </div>
                                         <div onClick={() => toggleLike('item4')} className='text-3xl cursor-pointer'>
                                             {likedItems.item4 ? '❤️' : '♡'}
@@ -187,12 +187,12 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className='font-light  tracking-widest text-zinc-500 flex items-start'>
-                                       Hand Embroidered Decor
+                                        Hand Embroidered Decor
                                     </div>
                                     <div className='flex justify-between items-center  text-zinc-500'>
 
                                         <div className='font-light tracking-widest'>
-                                            
+
                                         </div>
                                         <div onClick={() => toggleLike('item5')} className='text-3xl cursor-pointer'>
                                             {likedItems.item5 ? '❤️' : '♡'}
@@ -247,7 +247,7 @@ const Home = () => {
                                     <div className='flex justify-between items-center  text-zinc-500'>
 
                                         <div className='font-light tracking-widest'>
-                                            
+
                                         </div>
                                         <div onClick={() => toggleLike('item7')} className='text-3xl cursor-pointer'>
                                             {likedItems.item7 ? '❤️' : '♡'}
@@ -268,7 +268,7 @@ const Home = () => {
                                         </div>
                                     </div>
                                     <div className='font-light  tracking-widest text-zinc-500 flex items-start'>
-                                       Wooden Cave Decor
+                                        Wooden Cave Decor
                                     </div>
                                     <div className='flex justify-between items-center  text-zinc-500'>
 
