@@ -190,5 +190,21 @@
     .showdisplay {
         display: flex;
     }
+    .colflex{
+        display: flex;
+        flex-direction: column;
+    }
+    .setcarouselwidth{
+        width: 288px;
+    }
 
 }
+.carousel .control-dots .dot { 
+    border: 1px solid rgb(22, 22, 22) ;
+}
+
+
+.carousel .control-dots .dot.selected {
+    background-color: black; 
+}
+
